@@ -9,7 +9,7 @@
 
 #pragma once
 
-#ifdef stm32f0xx
+#ifdef STM32F0
 
 #include "device/stm32f0/adc.hpp"
 #include "device/stm32f0/base.hpp"

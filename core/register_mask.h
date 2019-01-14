@@ -13,23 +13,24 @@ namespace core
 {
 
 template <unsigned width>
-struct gen_unshifted_mask
+class gen_unshifted_mask
 {
-   enum {
-       value = (gen_unshifted_mask<width - 1>::value << 1) | 1 
-   };
+   public:
+    static const unsigned value = (gen_unshifted_mask<width - 1>::value << 1) | 1 ;
 };
 
 template <>
-struct gen_unshifted_mask<0>
+class gen_unshifted_mask<0>
 {
-   enum { value = 0 };
+   public:
+    static const unsigned value = 0;
 };
 
 template <unsigned offset, unsigned width>
-struct gen_mask
+class gen_mask
 {
-   enum { value = gen_unshifted_mask<width>::value << offset };
+   public:
+    static const unsigned value = gen_unshifted_mask<width>::value << offset;
 };
 
 }

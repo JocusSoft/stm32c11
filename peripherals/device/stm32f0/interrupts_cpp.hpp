@@ -8,7 +8,7 @@
 
 
 #pragma once
-#ifdef stm32f0xx
+#ifdef STM32F0
 
 typedef void (*pvf)();
 
