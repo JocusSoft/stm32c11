@@ -5,8 +5,11 @@
  * Copyright 2017 - 2018 Denis Mitrofanov (dmitrophanov@gmail.com)
  * Licensed under the Apache License, Version 2.0
  */
+
+#pragma once
+#ifdef STM32F0
 #include <stdint.h>
-#include "exception.hpp"
+
 
 extern char __StackTop;
 
@@ -53,3 +56,5 @@ extern "C" void defaultExceptionHandler()
 #pragma weak DebugMon   = defaultExceptionHandler
 #pragma weak PendSV     = defaultExceptionHandler
 #pragma weak SysTick    = defaultExceptionHandler
+
+#endif

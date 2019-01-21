@@ -18,6 +18,7 @@
 #include "device/stm32f0/dma.hpp"
 #endif
 #include "device/stm32f0/exti.hpp"
+#include "device/stm32f0/exception.hpp"
 #include "device/stm32f0/interrupts.hpp"
 #include "device/stm32f0/flash.hpp"
 #include "device/stm32f0/gpio.hpp"

@@ -9,7 +9,7 @@
 #include <stdint.h>
 
 #include "peripherals/device_select.hpp"
-
+#include "peripherals/device/stm32f0/exception_cpp.hpp"
 #include "peripherals/device/stm32f0/interrupts_cpp.hpp"
 
 #define INLINE inline __attribute__((always_inline))

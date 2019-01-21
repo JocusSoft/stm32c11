@@ -8,6 +8,8 @@
 
 #pragma once
 
+#ifdef STM32F0
+
 namespace exception {
   extern "C" {
     void NMI();
@@ -22,3 +24,4 @@ namespace exception {
   }
 }  // namespace exception
 
+#endif
