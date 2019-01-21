@@ -9,4 +9,9 @@
 
 #pragma once
 
-#include "device/device_select.hpp
+#include "peripherals/device_select.hpp"
+#include "peripherals/clock.hpp"
+#include "peripherals/interrupts.hpp"
+#include "peripherals/nvic.hpp"
+#include "peripherals/pin.hpp"
+#include "peripherals/systick.hpp"
